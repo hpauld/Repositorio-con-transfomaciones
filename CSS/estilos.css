@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: rgb(255, 224, 178);
+  font-family: "Roboto", sans-serif;
+  width: auto;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+
+  background: linear-gradient(90deg, rgba(255, 224, 178, 1) 0%, rgba(232, 188, 151, 1) 67%);
+  justify-content: space-between;
+  z-index: 1;
+}
+
+/*Estilos Menu de navegacion*/
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+}
+
+.logo img {
+  height: 70px;
+  margin-right: 15px;
+}
+
+.menu_items {
+  display: flex;
+  list-style: none;
+}
+
+.menu_items a {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  padding-right: 20px;
+}
+
+
+.texto_logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/* estilos seccion 1*/
+.seccion1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  height: 600px;
+  background-image: url(../Multimedia/FondoSeccion_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+
+}
+
+.seccion1 h1 {
+  margin-right: 10px;
+  background-color: rgba(34, 34, 34, 0.541);
+  padding-right: 10px;
+}
+
+.seccion1 p {
+  margin-right: 10px;
+  background-color: rgba(34, 34, 34, 0.541);
+  padding-right: 10px;
+}
+
+/* fin estilos seccion1*/
+
+/*inicio estilos seccion2*/
+
+
+.seccion2 {
+  background-color: beige;
+}
+
+.text_central {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.text_central h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.servicios_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+  grid-gap: 24px;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 30px;
+  justify-content: center;
+}
+
+.caja_servicios {
+  text-align: center;
+}
+
+.caja_servicios img {
+  max-width: 100%;
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  object-fit: cover;
+
+}
+
+.caja_servicios p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.caja_servicios h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: grey;
+}
+
+
+
+/*fin estilos seccion2*/
+
+/*--inicio estilos seccion3--*/
+
+.seccion3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+  height: 300px;
+  background-color: #ffe0b2;
+}
+
+/*--Fin estilos seccion3--*/
+
+/*--inicio estilos seccion4--*/
+.seccion4 {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../Multimedia/imagen_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  font-size: 45px;
+  color: white;
+  align-items: center;
+  text-align: center;
+
+}
+
+.seccion4 h2 {
+  font-weight: lighter;
+
+}
+
+.call_btn {
+  height: 70px;
+  width: 250px;
+  background-color: #ffe0b2;
+  border-style: none;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin-top: 20px;
+}
+
+button {
+  color: black;
+  cursor: pointer;
+}
+
+/* fin estilos seccion4*/
+
+/*inicio estilos footer*/
+footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.rrss {
+  margin-bottom: 15px;
+}
+
+.rrss a {
+  padding: 0 25px;
+  color: white;
+  font-size: 30px;
+}
+
+
+
+/* fin estilos footer*/
+
+/* Inicio estilos pagina nosotros */
+
+.nosotros {
+  background-color: #ffe0b2;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 110px;
+}
+
+.img_nosotros {
+  margin: 0 auto;
+}
+
+
+.img_nosotros img {
+  border-radius: 25%;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+
+}
+
+.texto_nosotros {
+  padding: 45px 0;
+  text-align: justify;
+  line-height: 25px;
+  margin: 0 50px;
+
+}
+
+.texto_nosotros h2 {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.texto_nosotros li {
+  margin-left: 30px;
+}
+
+/* Inicio estilos pagina servicios */
+
+
+.servicios {
+  width: 80%;
+  margin: 0 auto;
+  padding: 120px 0 20px;
+}
+
+.cabecera {
+  text-align: center;
+  padding: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 30px;
+
+}
+
+.cabecera p {
+  font-size: 20px;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.producto {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+}
+
+.producto_img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15%;
+  padding: 15px;
+  object-fit: cover;
+}
+
+.textos_productos {
+  text-align: justify;
+  padding: 20px;
+  font-weight: 300;
+}
+
+/* Fin estilos pagina servicios */
+
+/* Inicio estilos pagina productos */
+
+
+.productos {
+  padding: 120px 0;
+  margin: 0 auto;
+
+}
+
+.parrafo_producto {
+  text-align: center;
+}
+
+.cabecera_productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.cabecera_productos p {
+  font-weight: 300;
+  text-align: center;
+}
+
+
+.cabecera_productos img {
+  max-width: 500px;
+  width: 350px;
+  height: 350px;
+  border-radius: 15%;
+  padding: 15px;
+  object-fit: cover;
+}
+
+/* Fin estilos pagina Servicios */
+
+/* Inicio estilos pagina Contacto */
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.mapa_contacto {
+  padding-right: 30px;
+}
+
+.mapa_contacto iframe {
+  border-radius: 30px;
+}
+
+.texto_contacto h1 {
+  padding-bottom: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+/* Medias query*/
+@media screen and (max-width: 991px) {
+  .menu_items li {
+    padding: 15px;
+  }
+
+  .seccion3 p {
+    font-size: 30px;
+  }
+
+  .seccion4 {
+    font-size: 35px;
+  }
+
+  .nosotros {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .img_nosotros {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu_items {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu_items {
+    display: none;
+  }
+
+  .textos_seccion1 {
+    font-size: 25px;
+  }
+
+  .textoInicial {
+    font-size: 20px;
+  }
+
+  .call_btn {
+    height: 90px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 15px;
+  }
+
+}
